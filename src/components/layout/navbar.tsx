@@ -10,7 +10,6 @@ export default function Navbar() {
   return (
     <nav className="bg-white dark:bg-black shadow-md relative">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center">
-        
         {/* Logo */}
         <Link href="/" className="text-xl font-bold">
           MyApp
@@ -22,6 +21,7 @@ export default function Navbar() {
           <Link href="/blogs">Blogs</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
+          <Link href="/dashboard">Dashboard</Link>
         </div>
 
         {/* Right Side */}
@@ -30,7 +30,10 @@ export default function Navbar() {
           <Link href="/login" className="px-4 py-1 border rounded-md">
             Login
           </Link>
-          <Link href="/signup" className="px-4 py-1 bg-black text-white rounded-md">
+          <Link
+            href="/signup"
+            className="px-4 py-1 bg-black text-white rounded-md"
+          >
             Sign Up
           </Link>
         </div>
@@ -59,14 +62,27 @@ export default function Navbar() {
       >
         <div className="p-4 flex justify-between items-center border-b">
           <span className="font-bold">Menu</span>
-          <button onClick={() => setOpen(false)} className="text-xl">✕</button>
+          <button onClick={() => setOpen(false)} className="text-xl">
+            ✕
+          </button>
         </div>
 
         <div className="p-4 flex flex-col gap-4">
-          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/blogs" onClick={() => setOpen(false)}>Blogs</Link>
-          <Link href="/about" onClick={() => setOpen(false)}>About</Link>
-          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link href="/" onClick={() => setOpen(false)}>
+            Home
+          </Link>
+          <Link href="/blogs" onClick={() => setOpen(false)}>
+            Blogs
+          </Link>
+          <Link href="/about" onClick={() => setOpen(false)}>
+            About
+          </Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
+          <Link href="/dashboard" onClick={() => setOpen(false)}>
+            Dashboard
+          </Link>
 
           <hr />
 
