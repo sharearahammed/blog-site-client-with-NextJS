@@ -31,7 +31,7 @@ export default function Navbar() {
             Login
           </Link>
           <Link
-            href="/signup"
+            href="/register"
             className="px-4 py-1 bg-black text-white rounded-md"
           >
             Sign Up
@@ -93,7 +93,7 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/signup"
+            href="/register"
             onClick={() => setOpen(false)}
             className="bg-black text-white dark:bg-white dark:text-black px-3 py-1 rounded-md w-fit"
           >
