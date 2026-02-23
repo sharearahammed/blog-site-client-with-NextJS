@@ -9,6 +9,10 @@ export const userRoutes: Route[] = [
         // url: "/create-blog",
         url: "/dashboard/create-blog",
       },
+      {
+        title: "History",
+        url: "/dashboard/history",
+      },
     ],
   },
 ];
